@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="UTF-8">
+<title>Hong Portfolio</title>
+	<link rel="stylesheet" href="Home.css">
+
+</head>
+	<aside id="sidenav" class="nav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<h1><a href="Home.html"><img id="corner" style= "align-items:center" src="Images/(A)CornerPic.png" draggable="false" onContextMenu="return false;" alt="#"></a></h1>
+			<nav role="navigation">
+				<ul>
+					<a href="#"><h2 class="navText"> Home </h2></a>
+					<a href="#"><h2 class="navText"> Dreamweaver </h2></a>
+					<a href="#"><h2 class="navText"> Photoshop </h2></a>
+				</ul>
+			</nav>
+
+		</aside>
+<span style="font-size:30px;cursor:pointer; margin-left: 10px;" onclick="openNav()">&#9776;</span> 
+	
+<body>
+	<div id="page">
+		<h2>Amy Hong's Portfolio<br> Web Development</h2>
+		
+		<center>
+		<div id="main" style="text-align:center">
+
+			<div class="box">
+				<div class="frame boxBorder">
+					<a href="../T4.1 Grid Practices/Practice 2/Practice_1.html">
+					<img src="Images/Practice2.png" alt="#" draggable="false">
+						<h3>Grids Practice</h3>
+					</a>
+				</div>
+				<div class="frame boxBorder">
+					<a href="../T4.2 Shark Bank/Bank_Layout1/Layout1.html">
+					<img src="Images/Shark Bank 1.jpg" alt="#" draggable="false">
+					<h3>Shark Bank 1</h3>
+					</a>
+					
+					
+				</div>
+				<div class="frame boxBorder">
+					<a href="../T4.2 Shark Bank/Bank_Layout2/Layout2.html">
+					<img src="Images/Shark Bank 2.jpg" alt="#" draggable="false">
+					<h3>Shark Bank 2</h3>
+					</a>
+					
+				</div>
+			</div>
+			<!-- this arrangement of div in div incoporates the grid system -->
+			
+			<div class="box">
+				<div class="frame boxBorder">
+					<a href="../T4.2 Shark Bank/Bank_Layout3/Layout3.html">
+					<img src="Images/Shark Bank 3.jpg" alt="#" draggable="false">
+					<h3>Shark Bank 3</h3>
+					</a>
+					
+				</div>
+				<div class="frame boxBorder">
+					<a href="../T5.1 Lightbox Gallery/Gallery Home.html">
+					<img src="Images/Photo Gallary.jpg" alt="#" draggable="false">
+					<h3>Photo Gallery</h3>
+					</a>
+					
+					
+				</div>
+				<div class="frame boxBorder">
+					<a href="../T5.3 Operator Assessment/operatorAssessment.html">
+					<img src="Images/Operator Assesment.png" alt="#" draggable="false">
+					<h3>Operator</h3>
+					</a>
+					
+				</div>
+			</div>
+			
+			<div class="box">
+				<div class="frame boxBorder">
+					<a href="../T5.4 Slices Pizzaria/orderForm.html">
+					<img src="Images/Pizza Slices.png" alt="#" draggable="false">
+					<h3>Pizza Slices</h3>
+					</a>
+					
+				</div>
+				<div class="frame boxBorder">
+					<a href="../T5.2.1 Bandpage/bandpage.html">
+					<img src="Images/Bandpage.png" alt="#" draggable="false">
+					<h3>Bandpage</h3>
+					</a>
+					
+					
+				</div>
+				<div class="frame boxBorder">
+					<a href="https://food132402275.wordpress.com/soups/">
+					<img src="Images/Dumpling.jpg" alt="#" draggable="false">
+					<h3>Dumpling Truck</h3>
+					</a>
+					
+				</div>
+			</div>
+			<div class="box">
+				<div class="frame boxBorder">
+					<a href="../T6.1 Guess Who/GuessWho.html">
+					<img src="Images/guesswho.png" alt="#" draggable="false">
+					<h3>Guess Who</h3>
+					</a>
+					
+				</div>
+				<div class="frame boxBorder">
+					<a href="https://portfolio99442324.wordpress.com/">
+					<img src="Images/WP Portfolio.jpg" alt="#" draggable="false">
+					<h3>WP Portfolio</h3>
+					</a>
+					
+					
+				</div>
+				<div class="frame boxBorder">
+					<a href="../T6.2 Final Project/Revision.html">
+					<img src="Images/illum.jpg" alt="#" draggable="false">
+					<h3>Renovated Site</h3>
+					</a>
+					
+				</div>
+			</div>
+			
+	
+					
+		
+			</div>
+	</center>
+	</div>
+	</body>
+<br>
+<br>
+	
+	
+<div class="slideshow-container" style="text-align:center; align-items: center">
+<div class="slides">
+  <img src="Images/Gallery1.jpg" alt="#">
+  <div class="text">"Just living is not enough. One must have sunshine, freedom, and a little flower."</div>
+</div>
+
+<div class="slides">
+  <img src="Images/Gallery2.jpg" alt="#">
+  <div class="text">"Look deep into nature and then you'll understand everything better."</div>
+</div>
+
+<div class="slides">
+  <img src="Images/Gallery3.jpg" alt="#">
+  <div class="text">"Colors are the smiles of nature."</div>
+</div>
+
+<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+<a class="next" onclick="nextSlide(1)">&#10095;</a>
+	</div>
+
+<div style="text-align:center; align-items: center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+	
+
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+	
+
+  if (n > slides.length) {slideIndex = 1}   
+  if (n < 1) {slideIndex = slides.length} 
+  for (i = 0; i < slides.length; i++) { 
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) { 
+      dots[i].className = dots[i].className.replace(" active", ""); 
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+} 
+	
+	
+function openNav() {
+  document.getElementById("sidenav").style.width = "15%";
+}
+function closeNav() {
+  document.getElementById("sidenav").style.width = "0%";
+}
+</script>
+
+</html>
